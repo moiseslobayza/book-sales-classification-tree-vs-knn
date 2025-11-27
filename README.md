@@ -1,6 +1,6 @@
 # Book Sales Classification — Decision Tree (Gini) vs KNN 📚🤖
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](AQUÍ_VA_TU_LINK_DE_COLAB)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cq5CCFyvduj9FyCeJRLM5VWqUJzl20vH?usp=sharing)
 
 ---
 
@@ -87,6 +87,29 @@ Key points:
   (better balance across classes), while **KNN** gets a bit more accuracy.
 - The **extreme classes** (`baja`, `alta`) are the hardest; `media` is easier to recover.
 - In the tree, **`links_referencias`** and **`criticas_negativas`** appear as the most influential features.
+
+### Decision Tree (Gini)
+
+Accuracy: **0.500**  
+F1-macro: **0.452**
+
+![Confusion matrix – Decision Tree](reports/figures/confusion_matrix_tree.png)
+
+- Le cuesta sobre todo distinguir entre **baja** y **alta**.
+- La clase **media** es la que mejor se recupera.
+
+---
+
+### KNN (k = 13, distance)
+
+Accuracy: **0.531**  
+F1-macro: **0.434**
+
+![Confusion matrix – KNN](reports/figures/confusion_matrix_knn.png)
+
+- Mejora un poco la **accuracy**, pero sigue habiendo confusión entre clases extremas.
+- La clase **media** vuelve a ser la más fácil de predecir.
+
 
 ---
 
